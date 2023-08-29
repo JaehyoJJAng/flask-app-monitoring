@@ -1,0 +1,15 @@
+global:
+  scrape_interval: 15s 
+  evaluation_interval: 15s 
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+
+rule_files:
+
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["<APP IP주소 또는 컨테이너이름>:<Port>"]
