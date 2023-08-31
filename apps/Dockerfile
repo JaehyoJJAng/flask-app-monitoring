@@ -1,5 +1,7 @@
 FROM python:3.9-slim-buster
 
+WORKDIR /app
+
 ENV PYTHONBUFFERED=0
 
 COPY ./requirements/requirements.txt ./requirements.txt
